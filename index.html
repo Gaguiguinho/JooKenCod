@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/como-jogar.css">
+    <link rel="stylesheet" href="styles/game.css"> 
+    <title>Jo Ken Cod</title>
+</head>
+<body>
+    <div class="game-board" id="game-board">
+    <div class="start-screen" id="start-screen">
+        <audio src="sounds/start-sound.mp3" type="audio" id="start-song"></audio>
+        <audio src="sounds/click-sound.mp3" type="audio" id="click-song"></audio>
+        <img src="assets/vire-a-tela.png" class="vire-a-tela">
+        <h1 class="start-screen-title">
+            XÍCARAS QUEBRADAS?
+        </h1>
+        
+        <a href="#" class="start-screen-titulo" id="start-screen-titulo">
+            > CLIQUE PARA JOGAR <
+        </a>
+        <div class="start-screen-imgs">
+        <img src="assets/cuphead-run-png.gif" class="start-screen-img">
+     
+    </div>
+    </div>
+   
+    <div class="tela-um" id="tela-um">   
+      
+    <div class="texto-introducao">
+        <h1 class="titulo-introducao" id="titulo-introducao">
+            "XÍCARAS TRINCADAS?"
+        </h1>
+        <h2 class="desfecho-introducao" id="desfecho-introducao">
+            Qual terá sido o desfecho da história de Xicrinho?
+        </h2>
+        <p class="paragrafoUm-introducao">
+            Em um momento de aperto financeiro, Xicrinho se depara com uma atraente oferta ao ouvir uma chamada de um cassino na sua televisão. Decidido a tentar a sorte, reúne suas últimas moedas e parte rumo ao estabelecimento, ansioso por uma possível reviravolta em sua situação.
+        </p>
+       
+    </div>
+    <div class="tela-dois">
+   
+    <div class="paragrafoDois-introducao">
+        <p>
+            Ao adentrar o imponente cassino, a peculiar aparência de Xicrinho atrai olhares curiosos e alguns risos sutis. Determinado a não se deixar abalar, ele enfrenta desafio após desafio, gradualmente ganhando a admiração de todos, inclusive do enigmático proprietário, o notório Rei Dado.
+        </p>
+       
+   </div> 
+  
+    <div class="paragrafoTres-introducao">
+        Ao se deparar com a última mesa, Xicrinho enfrenta uma decisão de peso: partir com uma soma substancial de dinheiro ou arriscar tudo para dobrar seus ganhos. Movido pela ambição, ele opta pela segunda alternativa. Entretanto, o Rei Dado se revela um adversário astuto, e Xicrinho acaba perdendo tudo em um movimento inoportuno. Agora, para escapar dessa encruzilhada, ele se vê obrigado a vencer uma disputa de jo ken po ou enfrentar as graves consequências.
+    </div>
+   
+    <div>
+        <a href="#" class="ler-mais" id="ler-mais"> >leia mais...< </a>
+    </div>
+    <div>
+        <a href="#" class="avançar" id="avançar"> >avançar < </a>
+    </div>
+    <div class="tuto" id="tuto">
+    <div class="como-jogar">
+        <div class="como-jogar-cointainer">
+        <h1 class="como-jogar-titulo" id="como-jogar-titulo">
+            COMO JOGAR?
+        </h1>
+        </div>
+    <div class="jo-ken-cod-container" id="jo-ken-cod-container">
+        <div class="jo">
+            <h2 class="jo-titulo">
+                JO
+
+            </h2>
+            <img src="assets/pedra.png" class="jo-img">
+        </div>
+        <div class="ken">
+            <h2 class="ken-titulo">
+                KEN
+
+            </h2>
+            <img src="assets/papel.png" class="jo-img">
+        </div>
+        <div class="po">
+            <h2 class="po-titulo">
+                PO
+
+            </h2>
+            <img src="assets/tesoura.png" class="jo-img">
+        </div>
+    </div>
+       <div class="tutorial" id="tutorial">
+          <h1 class="tutorial-titulo" id="tutorial-titulo">
+            O QUE É JO-KEN-PO?
+          </h1>
+          <p class="tutorial-paragrafo" id="tutorial-paragrafo">
+            O Jokenpo é um jogo simples que envolve gestos feitos com as mãos. Os três gestos básicos são: Pedra (punho fechado), Papel (mão aberta) e Tesoura (dedos indicador e médio esticados). Cada gesto vence um dos outros dois: <strong class="strong-P"> Pedra amassa a Tesoura</strong> , <strong class="strong-T"> Tesoura corta o Papel </strong>, e o <strong class="strong-PA"> Papel embrulha a Pedra</strong>. Quando ambos os jogadores fazem o mesmo gesto, é um empate. Nessa última aposta de vida de Xicrinho você deverá:
+
+            <strong class="strong">PASSO 1:</strong> escolher seu movimento podendo ser jo ken ou po
+            <strong class="strong">PASSO 2:</strong> aguardar o movimento do Rei dado
+            <strong class="strong">PASSO 3:</strong> aguardar o resultado do round e repetir o mesmo no próximo round.
+            
+            <strong class="strong">VENCE QUEM FIZER 3 PONTOS PRIMEIRO</strong>
+          </p> 
+       </div>
+       <div>
+        <a href="#" class="jogar" id="jogar"> > JOGAR < </a>
+        
+    </div>
+    </div>
+    
+    <div class="show-game" id="game" style="display: none;">
+    <div class="container">
+       <h1 class="game-titulo">
+        <strong class="strong-for">JO </strong>  <strong class="strong-five">KEN </strong>  <strong class="strong-six">PO </strong>
+       </h1>
+    </div>
+    <div class="pontuador">
+        <div class="label label-you"> YOU </div>
+        <div class="label label-pc"> DADO</div>
+        <div class="placar" id="placar"> 0 : 0</div>
+    </div>
+    <div class="game-container" >
+    <div class="pontuador selected-image">
+        <div id="user">
+            <img src="assets/tesoura.png">
+        </div>
+        <div id="pc" class="reverse">
+            <img src="assets/papel.png">
+        </div>
+        </div>
+    </div>
+    <h2 class="choose-game"> ESCOLHA SEU MOVIMENTO</h2>
+    <div class="chooses">
+        <label>
+            <input type="radio" onclick="reset()" name="play" value="pedra" checked>
+            <button class="btn"><img src="assets/pedra.png"></button>
+        </label>
+        <label>
+            <input type="radio" onclick="reset()" name="play" value="papel" checked>
+            <button class="btn"><img src="assets/papel.png"></button>
+        </label>
+        <label>
+            <input type="radio" onclick="reset()" name="play" value="tesoura" checked>
+            <button class="btn"><img src="assets/tesoura.png"></button>
+        </label>
+    </div>
+    <div class="pontuador">
+        <button id="playing" class="btn-play">JOGAR</button>
+    </div>
+    </div>
+ 
+    <div id="you-loose" class="you-loose-container">
+        <h3 class="you-loose-text"> VOCÊ PERDEU</h3>
+        <img src="assets/baguio.png" class="you-loose-img">
+        <h2 class="you-loose-paragrafo"> Até diria que você jogou bem mas estaria <strong class="strong-three"> mentindo</strong>! Corrupto sim, mentiroso jamais.</h2>
+        <a href="#" id="you-loose-again-two" class ="you-loose-again"> >Jogar Novamente< </a>
+    </div>
+    <div id="you-win" class="you-win-container">
+        <h3 class="you-win-text"> YOU WIN</h3>
+        <img src="assets/cuphead-win-png.png" class="you-win-img">
+        <h2 class="you-win-paragrafo"> "Obrigado por me ajudar nessa enrascada, quem sabe não te faço um pix de toda a <strong class="strong-two"> verdinha </strong> que ganhei?".</h2>
+        <a href="#" id="you-loose-again" class ="you-win-again"> >Jogar Novamente< </a>
+    </div>  
+    </div>
+    
+  
+       
+   
+</body>
+<script src="js/textos.js"></script>
+<script src="js/tutorial.js"></script>
+<script src="js/game.js"></script>
+</html>

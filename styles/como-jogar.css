@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+
+:root {
+    --fonte-cursiva: 'Dancing Script', cursive;
+    --fonte-secundária: 'Lobster', sans-serif;
+}
+
+
+.como-jogar {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding-bottom: 50px;
+}
+
+.como-jogar-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.como-jogar-titulo {
+    font-size: 50px;
+    color: aliceblue;
+    font-family: var(--fonte-secundária);
+    padding-bottom: 40px;
+}
+
+
+.jo-titulo {
+    font-size: 38px;
+    color: blue;
+    font-family: var(--fonte-secundária);
+  
+}
+
+.jo-img {
+    width: 30%;
+  
+    
+}
+
+
+
+.ken-titulo {
+    font-size: 38px;
+    color: red;
+    font-family: var(--fonte-secundária);
+   
+}
+
+.ken-img {
+    width: 30%;
+
+}
+
+
+
+.po-titulo {
+    font-size: 38px;
+    color: green;
+    font-family: var(--fonte-secundária);
+}
+
+.po-img {
+    width: 30%;
+}
+
+.jo-ken-cod-container {
+    display: none;
+    flex-direction: row;
+    margin-left: 330px;
+ 
+    
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorial-titulo {
+    font-size: 38px;
+    color: aliceblue;
+    font-family: var(--fonte-secundária);
+}
+
+.tutorial-paragrafo {
+    font-size: 32px;
+    color: aliceblue;
+    font-family: var(--fonte-secundária);
+    font-weight: 300;
+}
+
+.strong {
+    color: gold;
+}
+
+.strong-P {
+    color: blue;
+}
+
+.strong-T {
+    color: red;
+}
+
+.strong-PA {
+    color: green;
+}
+
+@keyframes piscar-three {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.jogar { 
+    margin-top: 20px;
+    bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--fonte-secundária);
+    color: gold;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: piscar-three 1s infinite;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    
+    .jo-ken-cod-container {
+        display: none;
+        flex-direction: row;
+        margin-left: 1px;
+        
+    }
+
+    .jo-titulo {
+        font-size: 17px;
+    }
+
+    .ken-titulo {
+        font-size: 17px;
+    }
+
+    .po-titulo {
+        font-size: 17px;
+    }
+
+    .tutorial-titulo {
+        font-size: 15px;
+    }
+
+    .tutorial-paragrafo {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+     
+    .jogar {
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+
+}
